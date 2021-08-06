@@ -1,1 +1,17 @@
+name: TestCode4
+author: LunarMoon72
+version: 0.0.1
+mcpe-protocal: 448
+api: 3.21.1
+description: Plugin Command with Permissions
 
+commands:
+  perm:
+    description: Command with a permission
+    aliases: Command
+    permission: testcode4.cmd
+
+permissions:
+  testcode4.cmd:
+    description: Permission for perm Command
+    default: op
