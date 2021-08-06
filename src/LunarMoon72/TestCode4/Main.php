@@ -8,11 +8,8 @@ use pocketmine\command\Command;
 
 use pocketmine\command\CommandSender;
 
-use pocketmine\event\Listener
-
-class Main extends PluginBase implements Listener{
+class Main extends PluginBase{
    public function onEnabled(){
-   	$this->getServer()->getPluginManager()->registerEvents($this,$this);
    	$this->getLogger()->info("Plugin is Enabled");
 	}
 	public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args) : bool{
