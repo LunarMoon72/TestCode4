@@ -8,6 +8,8 @@ use pocketmine\command\Command;
 
 use pocketmine\command\CommandSender;
 
+use pocketmine\Player;
+
 class Main extends PluginBase{
    public function onEnabled(){
    	$this->getLogger()->info("Plugin is Enabled");
@@ -15,7 +17,7 @@ class Main extends PluginBase{
 	public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args) : bool{
 		switch($cmd->getName()){
 			case "perm"
-			  if($player->hasPermission("testcode4.cmd")){
+			   if($player->hasPermission("testcode4.cmd")){
 			  	if($sender instanceof Player){
 			  		$sender->sendMessage("This command only works for players!");
 			  	}else{
@@ -23,7 +25,7 @@ class Main extends PluginBase{
 			  			$args[0] = 4;
 			  		}
 			  	    $sender->getInventory()->addItem(Item::get(1, 0, $args[0])); 
-			  	    $sender->sendMessage("You have recived" .count $args[0].);
+			  	    $sender->sendMessage("You have recived" .count $args[0]);
 			  	}   
                     
 			  }
