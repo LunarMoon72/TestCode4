@@ -1,6 +1,6 @@
 name: TestCode4
 author: LunarMoon72
-main: LunarMoon72\TestCode4
+main: LunarMoon72\TestCode4\Main
 version: 0.0.1
 mcpe-protocal: 448
 api: 3.21.1
